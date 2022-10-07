@@ -90,6 +90,7 @@ a {
   letter-spacing: 0.03em;
 }
 .team-name {
+  background-color: #ffffff;
   color: #212121;
   font-weight: 500;
   font-size: 16px;
@@ -97,6 +98,7 @@ a {
   letter-spacing: 0.03em;
 }
 .team-position {
+  background-color: #ffffff;
   color: #757575;
   font-weight: 400;
   font-size: 16px;
