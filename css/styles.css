@@ -1,12 +1,22 @@
 /* primary-backgraund-color: #F5F5F5;
 secondary-backgraund-color: #2F303A;
-title-text-color: #212121;
+title-color: #212121;
 text-color: #757575;
 accent color: #2196F3; */
 
+/*general styles*/
+
+:root {
+  --primary-backgraund-color: #f5f5f5;
+  --secondary-backgraund-color: #2f303a;
+  --title-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+}
+
 body {
-  background-color: #f5f5f5;
-  color: #212121;
+  background-color: var(--primary-backgraund-color);
+  color: var(--title-color);
   font-family: "Roboto", sans-serif;
 }
 ul {
@@ -15,20 +25,38 @@ ul {
 a {
   text-decoration: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*header*/
+
 .header-logo,
 .footer-logo {
-  color: #2196f3;
+  color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
 .header-logo-studio {
   color: #000000;
 }
+
 .link-item {
-  color: #212121;
+  color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -36,20 +64,29 @@ a {
 }
 .link-item:hover,
 .link-item:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
+
+.current {
+  color: var(--accent-color);
+}
+
 .email-tel {
-  color: #757575;
+  color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .email-tel:hover {
-  color: #2196f3;
+  color: var(--accent-color);
 }
+
+/*hero*/
+
 .hero {
-  background-color: #2f303a;
+  background-color: var(--secondary-backgraund-color);
 }
 .hero-title {
   color: #ffffff;
@@ -59,61 +96,83 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 .hero-button {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
 }
+
+.hero-button:hover,
+.hero-button:focus {
+  text-decoration: underline;
+}
+
+/*features*/
+
 .features-title {
-  color: #212121;
+  color: var(--title-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .features-text {
-  color: #757575;
+  color: var(--text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+/* specialisation*/
+
 .spec-title,
 .team-title {
-  color: #212121;
+  color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
+
+/*our team*/
+
 .team-name {
   background-color: #ffffff;
-  color: #212121;
+  color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
 .team-position {
   background-color: #ffffff;
-  color: #757575;
+  color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
+/*footer*/
+
 .footer {
-  background-color: #2f303a;
+  background-color: var(--secondary-backgraund-color);
 }
 .footer-logo-studio {
   color: #ffffff;
 }
+
 .address {
   font-style: normal;
 }
+
 .footer-address {
   color: #ffffff;
   font-weight: 400;
@@ -121,28 +180,34 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+/*portfolio*/
+
 .portfolio-filter-item {
-  color: #212121;
+  color: var(--title-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
 }
+
 .portfolio-filter-item:hover,
 .portfolio-filter-item:focus {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
+
 .portfolio-item-title {
-  color: #212121;
+  color: var(--title-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .portfolio-item-type {
-  color: #757575;
+  color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
