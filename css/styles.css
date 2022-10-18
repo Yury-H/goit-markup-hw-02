@@ -29,6 +29,11 @@ a {
   text-decoration: none;
 }
 
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -75,14 +80,14 @@ a {
   color: var(--accent-color);
 }
 
-.email-tel {
+.header-email-tel {
   color: var(--text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.email-tel:hover {
+.header-email-tel:hover {
   color: var(--accent-color);
 }
 
@@ -97,6 +102,7 @@ a {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -106,6 +112,8 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -117,6 +125,7 @@ a {
 
 .features-title {
   color: var(--title-color);
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -136,12 +145,14 @@ a {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
 }
 
 /*our team*/
 
 .team {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
+  text-align: center;
 }
 
 .team-name {
@@ -183,6 +194,16 @@ a {
 .footer-address:hover,
 .footer-address:focus {
   color: #2196f3;
+}
+
+.footer-email-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.footer-email-tel:hover {
+  color: var(--accent-color);
 }
 
 /*portfolio*/
